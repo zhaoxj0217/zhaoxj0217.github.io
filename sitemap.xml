@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/08/22/hello-world/</loc>
+    <loc>http://zhaoxj0217.github.io/Tags/index.html</loc>
+    
+    <lastmod>2017-10-09T10:29:55.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/08/22/hello-world/</loc>
     
     <lastmod>2017-08-22T03:06:01.688Z</lastmod>
     
