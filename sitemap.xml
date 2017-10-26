@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhaoxj0217.github.io/2017/10/26/scikit_learn_preprocessing/</loc>
+    
+    <lastmod>2017-10-26T08:07:12.438Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/10/25/python_basics/</loc>
+    
+    <lastmod>2017-10-26T07:15:26.158Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/10/24/Machine_Learning_Url/</loc>
+    
+    <lastmod>2017-10-26T02:31:00.105Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhaoxj0217.github.io/2017/10/26/linear_algebra/</loc>
     
     <lastmod>2017-10-26T01:39:54.183Z</lastmod>
@@ -9,23 +30,9 @@
   </url>
   
   <url>
-    <loc>http://zhaoxj0217.github.io/2017/10/25/python_basics/</loc>
-    
-    <lastmod>2017-10-25T09:57:58.996Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://zhaoxj0217.github.io/2017/10/25/python_numpy/</loc>
     
     <lastmod>2017-10-25T08:35:03.672Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhaoxj0217.github.io/2017/10/24/Machine_Learning_Url/</loc>
-    
-    <lastmod>2017-10-25T08:31:53.240Z</lastmod>
     
   </url>
   
