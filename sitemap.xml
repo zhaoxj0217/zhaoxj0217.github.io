@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/02/captcha_by_cnn/</loc>
+    
+    <lastmod>2017-11-02T10:27:00.343Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhaoxj0217.github.io/2017/10/26/scikit_learn_preprocessing/</loc>
     
     <lastmod>2017-10-26T08:07:12.438Z</lastmod>
