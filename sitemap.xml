@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/05/mysql_optimize_execute/</loc>
+    
+    <lastmod>2017-11-06T02:13:36.676Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/05/mysql_optimize_framework/</loc>
+    
+    <lastmod>2017-11-05T07:38:26.551Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/05/mysql_optimize_ops/</loc>
+    
+    <lastmod>2017-11-05T06:42:40.931Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhaoxj0217.github.io/2017/11/02/captcha_by_cnn/</loc>
     
-    <lastmod>2017-11-02T10:27:00.343Z</lastmod>
+    <lastmod>2017-11-05T06:23:02.320Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/05/linux_10_command/</loc>
+    
+    <lastmod>2017-11-05T03:18:25.875Z</lastmod>
     
   </url>
   
