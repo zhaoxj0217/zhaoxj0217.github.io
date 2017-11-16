@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/07/captch_by_kNN/</loc>
+    
+    <lastmod>2017-11-16T10:33:38.489Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/16/norm&Euclidean_distance/</loc>
+    
+    <lastmod>2017-11-16T10:10:47.189Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/16/catptch_pretreatment/</loc>
+    
+    <lastmod>2017-11-16T09:48:17.443Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/14/captch_by_svm/</loc>
+    
+    <lastmod>2017-11-16T07:14:43.800Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/06/spring_Transactional/</loc>
+    
+    <lastmod>2017-11-07T02:38:59.061Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhaoxj0217.github.io/2017/11/05/mysql_optimize_execute/</loc>
     
     <lastmod>2017-11-06T02:13:36.676Z</lastmod>
