@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhaoxj0217.github.io/2017/11/14/captch_by_svm/</loc>
+    
+    <lastmod>2017-11-29T06:48:27.832Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhaoxj0217.github.io/2017/10/24/Machine_Learning_Url/</loc>
+    
+    <lastmod>2017-11-20T09:21:14.238Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhaoxj0217.github.io/2017/11/07/captch_by_kNN/</loc>
     
     <lastmod>2017-11-16T10:33:38.489Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://zhaoxj0217.github.io/2017/11/16/catptch_pretreatment/</loc>
     
     <lastmod>2017-11-16T09:48:17.443Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhaoxj0217.github.io/2017/11/14/captch_by_svm/</loc>
-    
-    <lastmod>2017-11-16T07:14:43.800Z</lastmod>
     
   </url>
   
@@ -82,13 +89,6 @@
     <loc>http://zhaoxj0217.github.io/2017/10/25/python_basics/</loc>
     
     <lastmod>2017-10-26T07:15:26.158Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhaoxj0217.github.io/2017/10/24/Machine_Learning_Url/</loc>
-    
-    <lastmod>2017-10-26T02:31:00.105Z</lastmod>
     
   </url>
   
