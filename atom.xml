@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaoxj0217.github.io/"/>
-  <updated>2017-12-04T06:09:58.177Z</updated>
+  <updated>2017-12-04T07:09:57.431Z</updated>
   <id>http://zhaoxj0217.github.io/</id>
   
   <author>
@@ -20,9 +20,17 @@
     <link href="http://zhaoxj0217.github.io/2017/11/29/LeNet-5/"/>
     <id>http://zhaoxj0217.github.io/2017/11/29/LeNet-5/</id>
     <published>2017-11-29T09:51:40.681Z</published>
-    <updated>2017-12-04T06:09:58.177Z</updated>
+    <updated>2017-12-04T07:09:57.431Z</updated>
+    
+    <content type="html"><![CDATA[<p>非线性特征工程–&gt; 非线性分类器<br>Xgboost<br>RF<br>GBDT<br>adaboost</p>
+<p>线性特征工程–&gt;  线性分类器<br>SVM<br>LR<br>MLP</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;非线性特征工程–&amp;gt; 非线性分类器&lt;br&gt;Xgboost&lt;br&gt;RF&lt;br&gt;GBDT&lt;br&gt;adaboost&lt;/p&gt;
+&lt;p&gt;线性特征工程–&amp;gt;  线性分类器&lt;br&gt;SVM&lt;br&gt;LR&lt;br&gt;MLP&lt;/p&gt;
+
     
     </summary>
     
@@ -36,14 +44,25 @@
   </entry>
   
   <entry>
-    <title>决策树</title>
+    <title>决策树之ID3算法</title>
     <link href="http://zhaoxj0217.github.io/2017/11/29/Decision_Tree_Learning/"/>
     <id>http://zhaoxj0217.github.io/2017/11/29/Decision_Tree_Learning/</id>
     <published>2017-11-29T09:45:36.657Z</published>
-    <updated>2017-12-04T06:09:11.770Z</updated>
+    <updated>2017-12-04T10:25:51.407Z</updated>
     
     <content type="html"><![CDATA[<p>信息增益（香农熵/熵）<br>熵是表示随机变量不确定性的度量<br>条件熵H（Y|X）表示在已知随机变量X的条件下随机变量Y的不确定性<br>信息增益表示得知特征X的信息而使得类Y的信息不确定性减少的程度<br>定义:特征A对训练数据集D的信息增益g(D,A),定义为集合D的经验熵H（D）与特征A给定条件下D的经验条件熵H（D|A）之差，及g(D,A)=H(D)-H(D|A)<br>信息增益比：特征A对训练数据集D的信息增益比gr(D,A)定义为其信息增益g(D,A)与训练数据集D的经验熵H(D)之比。 </p>
-<p>ID3算法生成决策树<br>ID3算法的核心是在决策树哥哥节点上应用信息增益准则选择特征，递归地构建决策树</p>
+<p>ID3算法生成决策树<br>ID3算法的核心是在决策树各个节点上应用信息增益准则选择特征，递归地构建决策树。具体的方法是：从根节点开始，对结点计算所有可能的特征的信息增益，选择信息增益最大的额特征作为结点的特征，由该特征的不同取值简历子节点；再对子节点递归地调用以上方法，构建决策树；直到所有特征的信息增益均很小或没有特征可以选择为止。直到得到一个决策树。</p>
+<p>ID3算法<br>基于奥卡姆剃刀原理的,即用尽量用较少的东西做更多的事<br>是一种自顶向下的贪心策略<br>输入：训练数据集D，特征集A，阈值ε<br>输出：决策树T<br>（1）若D中所有实例属于同一类Ck,则T为单结点树，并将类Ck作该结点的类标记，返回T；<br>（2）若A=Ø，则T为单结点树，并将D中实例数最大的类Ck作为该结点的类标记，返回T；<br>（3）否则，计算A中各特征对D的信息增益，选择信息增益最大的特征Ag；<br>（4）如果Ag的信息增益小于阈值ε，则置T为单结点树，并将D中实例数最大的类Ck作为该结点的类标记，返回T；<br>（5）否则，对Ag的每一个可能值ai，依Ag=ai将D分割为若干非空子集Di,将Di中实例数最大的类作为标记，构建子结点，由结点及其子结点构成树T，返回T<br>（6）对第i个子结点，以Di为训练集，以A-{Ag}为特征集，递归地调用步1~步5，得到子树Ti,返回Ti</p>
+<p>贷款申请样本数据表</p>
+<p>| ID | 年龄 | 有工作 | 有自己的房子 | 信贷情况 | 类别 |<br>| 1  | 青年 | 否     | 否         | 一般     | 否 |<br>| 2  | 青年 | 否     | 否         | 好       | 否 |<br>| 3  | 青年 | 是     | 否         | 好       | 是 |<br>| 4  | 青年 | 是     | 是         | 一般     | 是 |<br>| 5  | 青年 | 否     | 否         | 一般     | 否 |<br>| 6  | 中年 | 否     | 否         | 一般     | 否 |<br>| 7  | 中年 | 否     | 否         | 好       | 否 |<br>| 8  | 中年 | 是     | 是         | 好       | 是 |<br>| 9  | 中年 | 否     | 是         | 非常好   | 是 |<br>| 10 | 中年 | 否     | 是         | 非常好   | 是 |<br>| 11 | 老年 | 否     | 是         | 非常好   | 是 |<br>| 12 | 老年 | 否     | 是         | 好       | 是 |<br>| 13 | 老年 | 是     | 否         | 好       | 是 |<br>| 14 | 老年 | 是     | 否         | 非常好    | 是 |<br>| 15 | 老年 | 否     | 否         | 一般      | 否 |  </p>
+<p>首先计算经验熵H（D）<br><img src="https://i.loli.net/2017/12/04/5a251868957b2.png" alt="HD.PNG"><br>再分别以A1,A2,A3,A4表示年龄，有工作，有自己的房子和信贷情况4个特征，计算信息增益<br>年龄<br><img src="https://i.loli.net/2017/12/04/5a251918f40e6.png" alt="gDA1.PNG">   </p>
+<p>有工作<br><img src="https://i.loli.net/2017/12/04/5a25198a32c9c.png" alt="gDA2.PNG"></p>
+<p>有自己的房子<br><img src="https://i.loli.net/2017/12/04/5a251af3d52bb.png" alt="gDA3.PNG">  </p>
+<p>信贷情况 略<br>g(D|A4) = 0.971-0.608 =0.363  </p>
+<p>最后，由于特征A3的信息增益最大，所以选择特征A3作为最优特征<br>以A3为根结点的特征，将训练数据集D划分为两个子集D1（A3取值为是）和D2（A3取值为否）由于D1只有同一类的样本点，所以它成为一个叶结点，结点的类标记为是<br>对D2从A1年龄，A2有工作，和A4信贷情况中选择新的特征</p>
+<p><img src="https://i.loli.net/2017/12/04/5a251f3e86411.png" alt="gD2A.PNG">  </p>
+<p>选择信息增益最大的特征A2作为节点的特征，由于A2有两个可能取值，从这一节点引出两个子节点，一个对应“是”，包含3个样本，它们属于同一类，所以这是一个叶结点，另一个是对应“否”，包含6个样本，他们也属于同一类，所以这也是一个叶结点，类标记为“否”<br>最终生成决策树  </p>
+<p><img src="https://i.loli.net/2017/12/04/5a2522a745f9a.png" alt="decision_final.PNG"></p>
 ]]></content>
     
     <summary type="html">
@@ -387,9 +406,9 @@ def svm_cross_validation(train_x, train_y):
     
       <category term="python" scheme="http://zhaoxj0217.github.io/tags/python/"/>
     
-      <category term="captcha" scheme="http://zhaoxj0217.github.io/tags/captcha/"/>
-    
       <category term="SVM" scheme="http://zhaoxj0217.github.io/tags/SVM/"/>
+    
+      <category term="captcha" scheme="http://zhaoxj0217.github.io/tags/captcha/"/>
     
   </entry>
   
@@ -548,9 +567,9 @@ def classify(inX, dataSet, labels, k):
     
       <category term="python" scheme="http://zhaoxj0217.github.io/tags/python/"/>
     
-      <category term="KNN" scheme="http://zhaoxj0217.github.io/tags/KNN/"/>
-    
       <category term="captcha" scheme="http://zhaoxj0217.github.io/tags/captcha/"/>
+    
+      <category term="KNN" scheme="http://zhaoxj0217.github.io/tags/KNN/"/>
     
   </entry>
   
@@ -1242,9 +1261,9 @@ def get_verify():
     
       <category term="python" scheme="http://zhaoxj0217.github.io/tags/python/"/>
     
-      <category term="captcha" scheme="http://zhaoxj0217.github.io/tags/captcha/"/>
-    
       <category term="深度学习" scheme="http://zhaoxj0217.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="captcha" scheme="http://zhaoxj0217.github.io/tags/captcha/"/>
     
       <category term="CNN" scheme="http://zhaoxj0217.github.io/tags/CNN/"/>
     
